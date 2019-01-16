@@ -1,0 +1,44 @@
+{
+  "mapfre": {
+    "basic": {
+      "title": "Terceros básico",
+      "price_from": "520"
+    },
+    "plus": {
+      "title": "Terceros ampliado",
+      "price_from": "612"
+    },
+    "full": {
+      "title": "Todo riesgo",
+      "price_from": "723"
+    }
+  },
+  "linea-directa": {
+    "basic": {
+      "title": "Terceros básico",
+      "price_from": "425"
+    },
+    "plus": {
+      "title": "Terceros ampliado",
+      "price_from": "580"
+    },
+    "full": {
+      "title": "Todo riesgo",
+      "price_from": "780"
+    }
+  },
+  "mutua": {
+    "basic": {
+      "title": "Terceros básico",
+      "price_from": "450"
+    },
+    "plus": {
+      "title": "Terceros ampliado",
+      "price_from": "543"
+    },
+    "full": {
+      "title": "Todo riesgo",
+      "price_from": "733"
+    }
+  }
+}
