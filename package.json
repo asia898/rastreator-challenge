@@ -3,16 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "server": "nodemon server/index.js | bunyan"
+    "server": "nodemon server/index.js | bunyan",
+    "start": "webpack"
   },
   "author": "Rastreator Frontend",
   "license": "ISC",
   "devDependencies": {
+    "bootstrap": "^5.0.2",
     "bunyan": "^1.8.12",
+    "css-loader": "^6.2.0",
     "koa": "^2.6.2",
     "koa-body": "^4.0.6",
     "koa-logger": "^3.2.0",
     "koa-router": "^7.4.0",
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
   }
 }
