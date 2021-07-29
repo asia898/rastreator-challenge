@@ -1,0 +1,75 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+$size: 73px;
+
+.search-result__header {
+  padding: 0.5rem;
+}
+
+.modal-title--smaller {
+  font-size: 15px;
+}
+
+.close--primary {
+  background-color: transparent;
+  font-size: 2rem;
+  line-height: 0;
+}
+
+.close__icon {
+  display: inline-block;
+  margin: -5px 0 -10px 0;
+}
+
+.search-result__summary {
+  background-color: #e8e8e8;
+}
+
+.search-result__logo {
+  display: inline-block;
+  margin: -1em 0 -1em 0;
+  height: $size * 2;
+  width: $size;
+  border-bottom-right-radius: $size * 2;
+  border-top-right-radius: $size * 2;
+}
+
+.btn--green {
+  background-color: $green;
+  color: white;
+  font-weight: bold;
+  box-shadow: $box-shadow-sm;
+}
+
+.card-group-wrapper {
+  height: 105px;
+}
+.card-group {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.card-body {
+  padding: 10px;
+}
+.card {
+  min-width: 150px;
+  margin-right: 10px;
+}
+
+.card:first-child {
+  margin-left: 15px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}

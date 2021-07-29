@@ -3,18 +3,44 @@ const path = require("path");
 module.exports = {
   entry: "./src/js/index.js",
   watch: true,
-  mode: 'development',
+  mode: "development",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "server/public/js"),
     filename: "bundle.js",
   },
 
   module: {
     rules: [
       {
-        test: /\.css$/i,
-
-        use: ["style-loader", "css-loader"],
+        test: /\.(scss)$/,
+        use: [
+          {
+            // inject CSS to page
+            loader: "style-loader",
+          },
+          {
+            // translates CSS into CommonJS modules
+            loader: "css-loader",
+          },
+          {
+            // Run postcss actions
+            loader: "postcss-loader",
+            options: {
+              // `postcssOptions` is needed for postcss 8.x;
+              // if you use postcss 7.x skip the key
+              postcssOptions: {
+                // postcss plugins, can be exported to postcss.config.js
+                plugins: function () {
+                  return [require("autoprefixer")];
+                },
+              },
+            },
+          },
+          {
+            // compiles Sass to CSS
+            loader: "sass-loader",
+          },
+        ],
       },
     ],
   },

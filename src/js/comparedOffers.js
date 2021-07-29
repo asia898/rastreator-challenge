@@ -1,4 +1,4 @@
 export default function bar() {
     //
-    console.log('Hi');
+    console.log('HiHi');
   }

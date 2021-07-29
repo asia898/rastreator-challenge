@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Application</title>
+  </head>
+  <body>
+
+    <!-- Modal -->
+    <div class="modal fade modal-fullscreen-sm-down search-result" id="compareModal" tabindex="-1" role="dialog" aria-labelledby="compareModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-md-down" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0 flex-column search-result__header">
+            <button type="button" class="close align-self-end p-0 border-0 close--primary" data-dismiss="modal" aria-label="Close">
+              <i class="bi-x text-secondary close__icon" aria-hidden="true"></i>
+            </button>
+            <h5 class="modal-title text-center lh-sm modal-title--smaller" id="compareModalLabel">
+              <span class="fw-bold">¡Gracias!</span> Aqui tienes todo <br />
+              lo que buscabas
+            </h5>
+          </div>
+
+          <div class="modal-body">
+            <section class="container px-0 search-result__summary mb-4">
+              <div class="row"> 
+                <div class="col-3 bg-white d-flex align-items-center justify-content-center search-result__logo">
+                  <img style="width: 35px; height: 35px;"src="./images/volkswagen.png" alt="volkswagen logo">
+                </div>
+                
+                <div class="col-9 search-result__offer py-3">
+                  <div class="d-flex search-result__status">
+                        <i class="bi-check2 me-2 text-primary fw-bold"></i>
+                      <div>
+                        <h6 class="mb-0"><span class="fw-bold lh-sm">Oferta personalizada enviada</span></h6>
+                        <p class="text-secondary mb-2">Volkswagen se pondrá en contacto contigo en breves</p>
+                      </div>
+                  </div>
+                  <div class="d-flex align-item-center search-result__files">
+                        <i class="bi-download me-2 text-primary fw-bold align-middle"></i>
+                        <a href="">Descargar catálogo del coche</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="search-compare border-bottom border-2 mb-4">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h6 class="fw-bold mb-0">¿Vas a necesitar un seguro?</h6>
+                <button type="button" class="btn btn--green">Personalizar</button>
+              </div>    
+              
+              <div class="card-group-wrapper">
+                <div id="insurances" class="card-group d-flex flex-row flex-nowrap overflow-scroll scrollbar-hidden">
+                  <!-- <div class="card">
+                    <div class="card-body">
+                      <a href="#" class="card-title text-decoration-none text-primary">Terceros básico</a>
+                      <p class="card-text text-muted mb-0">Desde</p>
+                      <p class="card-text fw-bold lead">520 &euro;/mes</p>
+                    </div>
+                  </div> -->
+                </div>
+
+              </div>
+            
+          </section>
+
+          <section class="search-compare border-bottom border-2 mb-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h6 class="fw-bold mb-0">¿Quieres Financiación?</h6>
+              <button type="button" class="btn btn--green">Personalizar</button>
+            </div>    
+            
+            
+            <div class="card-group-wrapper">
+              <div id="loans" class="card-group d-flex flex-row flex-nowrap overflow-scroll scrollbar-hidden"></div>
+            </div>
+          
+        </section>
+          <section id="taxation" class="search-compare border-bottom border-2 mb-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <h6 class="fw-bold mb-0">Tasación por mi coche</h6>
+              <button type="button" class="btn btn--green">Personalizar</button>
+            </div> 
+          
+        </section>
+
+
+
+
+          </div>
+
+          <div class="modal-footer py-0 border-0 ">
+            <img class="mx-auto my-0 d-block absolute" src="./images/dog.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bundle.js"></script>
+  </body>
+</html>
