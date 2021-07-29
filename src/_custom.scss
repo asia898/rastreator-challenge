@@ -6,17 +6,14 @@
 
 // 2. Include any default variable overrides here
 
+$font-size-base: 0.85rem !default; // Assumes the browser default, typically `16px`
 
+$blue: #00a7d1 !default;
+$green: #93b925 !default;
 
-$font-size-base:              0.85rem !default; // Assumes the browser default, typically `16px`
-
-$blue:    #00a7d1 !default;
-$green:    #93b925 !default;
-
-$input-btn-padding-y:         .400rem !default;
-$border-radius:               .15rem !default;
-$lead-font-size:              $font-size-base * 1.15;
-
+$input-btn-padding-y: 0.4rem !default;
+$border-radius: 0.15rem !default;
+$lead-font-size: $font-size-base * 1.15;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
